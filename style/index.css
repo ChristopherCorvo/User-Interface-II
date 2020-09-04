@@ -1,1 +1,173 @@
-/* Add CSS styling here */
+/* myers reset https://meyerweb.com/eric/tools/css/reset/ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* myers reset end */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid gray; */
+}
+
+html{
+    font-size: 62.5%;
+    background-color: rgb(253, 239, 239);
+    
+}
+
+a{
+    text-decoration:none;
+  }
+/* styles begin here */
+
+.main-content{
+    display:flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+nav{
+    display:flex;
+    padding: 2%;
+    justify-content: flex-end;
+    
+}
+
+nav a{
+    padding:5%; 
+    color: darkgrey;
+     
+}
+
+header h1, h2, p{
+    margin-bottom: 2%;
+    
+}
+
+h1{
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+header p{
+    width: 70%;
+}
+
+a {
+    color: darkgray;
+}
+
+/* background image styles */
+
+.background-image-container{
+    background-image: url("/Users/thecrowsnest/Documents/Lambda/Git/User-Interface-II/assets/stefan-kunze--6-uqd2hMCg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+/* project thumbnails */
+
+.projects-main{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    margin-top: 1%;
+}
+
+
+    
+.project-image{
+    margin-right: 2%;
+}
+
+.project-text{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    font-size:1.5rem;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    
+   
+}
+
+
+.contact-button {
+    width: 20%;
+    padding: 5%;
+    size: 100px;
+}
+
+.contact-button a{
+    padding: 8%;
+    font-size: 2rem;
+}
+
