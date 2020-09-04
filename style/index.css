@@ -60,7 +60,16 @@ html{
     font-size: 62.5%;
     
 }
+
+a{
+    text-decoration:none;
+  }
 /* styles begin here */
+
+.main-content{
+    display:flex;
+    flex-direction: column;
+}
 
 header {
     display: flex;
@@ -68,31 +77,66 @@ header {
     align-items: center;
     font-size: 2rem;
     margin-top: 2%;
+    margin-bottom: 5%;
 }
 
-header nav, h1, h2, p{
+nav{
+    display:flex;
+    padding: 2%;
+    justify-content: flex-start;
+}
+
+nav a{
+    padding:3%;
+    
+}
+
+header h1, h2, p{
     margin-bottom: 2%;
     
 }
 
+h1{
+    font-size: 2rem;
+}
+
+header p{
+    width: 70%;
+}
+
 /* background image styles */
+
+.background-image-container{
+    background-image: url("/Users/thecrowsnest/Documents/Lambda/Git/User-Interface-II/assets/stefan-kunze--6-uqd2hMCg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
 
 /* project thumbnails */
 
-.my-projects{
+.projects-main{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
     /* justify-content: space-around; */
+    margin-top: 1%;
 }
 
 
     
+.project-image{
+    margin-right: 2%;
+}
 
-
- .project-image img{
-    max-width: 70%;
-}  
+.project-text{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    font-size:1.5rem;
+    justify-content: center;
+    margin-left: 5%;
+}
 
 footer {
     display: flex;
@@ -100,9 +144,12 @@ footer {
     justify-content: center;
     align-items: center;
     height: 8vh;
+   
 }
 
 footer a{
     font-size: 2rem;
+    padding: 3%;
 
 }
+
