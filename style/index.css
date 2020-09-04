@@ -53,11 +53,12 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 
 html{
     font-size: 62.5%;
+    background-color: rgb(253, 239, 239);
     
 }
 
@@ -83,12 +84,14 @@ header {
 nav{
     display:flex;
     padding: 2%;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    
 }
 
 nav a{
-    padding:3%;
-    
+    padding:5%; 
+    color: darkgrey;
+     
 }
 
 header h1, h2, p{
@@ -97,11 +100,19 @@ header h1, h2, p{
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 header p{
     width: 70%;
+}
+
+a {
+    color: darkgray;
 }
 
 /* background image styles */
@@ -144,12 +155,19 @@ footer {
     justify-content: center;
     align-items: center;
     height: 8vh;
+    
    
 }
 
-footer a{
-    font-size: 2rem;
-    padding: 3%;
 
+.contact-button {
+    width: 20%;
+    padding: 5%;
+    size: 100px;
+}
+
+.contact-button a{
+    padding: 8%;
+    font-size: 2rem;
 }
 
