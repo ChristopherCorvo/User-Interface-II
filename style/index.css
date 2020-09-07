@@ -79,14 +79,14 @@ header {
     align-items: center;
     font-size: 2rem;
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     
 }
 
 nav{
     display:flex;
     justify-content: flex-end;
-    margin-left: 4%;
+    margin-left: 7%;
     margin-bottom: 2%;
     
     
@@ -97,6 +97,7 @@ nav a{
     color: black;
     border: 1px solid black;
     background: lightgray;
+   
      
 }
 
@@ -111,7 +112,7 @@ header h1, h2, p{
 }
 
 h1{
-    font-size: 10rem;
+    font-size: 6rem;
 }
 
 h2 {
@@ -186,7 +187,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 14vh;
     background-color: lightgray;
     margin-top: 4%;
     
