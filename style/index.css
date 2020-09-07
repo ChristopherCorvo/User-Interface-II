@@ -53,7 +53,7 @@ table {
 
 * {
     box-sizing: border-box;
-    /* border: 1px solid gray; */
+    
 }
 
 html{
@@ -75,23 +75,34 @@ a{
 header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 2rem;
     margin-top: 2%;
     margin-bottom: 5%;
+    
 }
 
 nav{
     display:flex;
-    padding: 2%;
     justify-content: flex-end;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    
     
 }
 
 nav a{
     padding:5%; 
-    color: darkgrey;
+    color: black;
+    border: 1px solid black;
+    background: lightgray;
      
+}
+
+nav a:hover{
+    background: black;
+    color: white;
 }
 
 header h1, h2, p{
@@ -121,7 +132,9 @@ a {
     background-image: url("/Users/thecrowsnest/Documents/Lambda/Git/User-Interface-II/assets/stefan-kunze--6-uqd2hMCg-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 30vh;
+    margin-right: 2%;
+    margin-left:  2%;
 }
 
 /* project thumbnails */
@@ -130,23 +143,42 @@ a {
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    margin-top: 1%;
+    justify-content: space-between;
+    margin-top: 2%;
+    
 }
 
-
+.image-container{
+    display:flex;
+    margin-left: 2%;
+   
+}
     
 .project-image{
-    margin-right: 2%;
+    margin-right: 3%;
+    
 }
 
 .project-text{
     display: flex;
-    align-items: center;
-    width: 15%;
+    flex-wrap: wrap;
     font-size:1.5rem;
     justify-content: center;
-    margin-left: 5%;
+    align-content: center;
+    
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+    
+    
+}
+
+.text{
+    width: 30%;
+    
+    
+
 }
 
 footer {
@@ -154,20 +186,30 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 10vh;
+    background-color: lightgray;
+    margin-top: 4%;
     
    
 }
 
 
 .contact-button {
-    width: 20%;
+    width: 25%;
     padding: 5%;
     size: 100px;
+    margin-top: 2%
 }
 
 .contact-button a{
     padding: 8%;
     font-size: 2rem;
+    border: 1px solid black;
+    color: black;
+    background: lightgray;
 }
 
+.contact-button a:hover{
+    background: black;
+    color: white;
+}
