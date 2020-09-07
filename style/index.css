@@ -180,10 +180,7 @@ a {
     width: 20%;
     margin-right: 2%;
     margin-left: 1%;
-    text-align: center;
-    
-    
-    
+    text-align: center;  
 }
 
 .text{
@@ -202,8 +199,6 @@ footer {
     background-color: lightgray;
     /* margin-top: 4%; */
     flex: 0;
-    
-   
 }
 
 
@@ -226,3 +221,22 @@ footer {
     background: black;
     color: white;
 }
+
+@media (max-width: 800px) {
+
+    .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 7%;
+        margin-top: 0%;
+    }
+
+    .project-text{
+        width: 100%;
+        margin-top: 2%;
+    }
+
+}
+
+@media (max-width: 500px) {}
