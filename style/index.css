@@ -130,6 +130,7 @@ h2 {
 
 header p{
     width: 70%;
+    text-align: center;
 }
 
 a {
@@ -144,8 +145,7 @@ a {
     background-repeat: no-repeat;
     height: 35vh;
     margin-right: 2%;
-    margin-left:  2%;
-    
+    margin-left:  2%;    
 }
 
 /* project thumbnails */
@@ -229,7 +229,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         margin-left: 7%;
-        margin-top: 0%;
+        margin-top: ;
     }
 
     .project-text{
@@ -237,6 +237,48 @@ footer {
         margin-top: 2%;
     }
 
+    .background-image-container{
+        background-image: url("/Users/thecrowsnest/Documents/Lambda/Git/User-Interface-II/assets/stefan-kunze--6-uqd2hMCg-unsplash.jpg");
+        max-width: 100%;
+        min-height: 20%;
+        background-size: cover;
+        margin-right: 2%;
+        margin-left:  2%;    
+    }
+
+    .contact-button{
+        width: 30%
+    }
+
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+
+    .contact-button{
+        width: 40%;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 360px) {
+    h1{
+        font-size: 4.5rem;
+    }
+
+    nav{
+        display:flex;
+        flex-direction: column;
+        padding-right: 4%;
+        width: 40%;
+       
+          
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    .contact-button{
+        width: 50%;
+    }
+}
