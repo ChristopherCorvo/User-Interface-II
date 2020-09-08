@@ -67,10 +67,18 @@ a{
   }
 /* styles begin here */
 
-.main-content{
-    display:flex;
-    flex-direction: column;
+html, body{
+    height: 100%
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+
 
 header {
     display: flex;
@@ -80,6 +88,7 @@ header {
     font-size: 2rem;
     margin-top: 2%;
     margin-bottom: 1%;
+    
     
 }
 
@@ -121,6 +130,7 @@ h2 {
 
 header p{
     width: 70%;
+    text-align: left;
 }
 
 a {
@@ -133,9 +143,9 @@ a {
     background-image: url("/Users/thecrowsnest/Documents/Lambda/Git/User-Interface-II/assets/stefan-kunze--6-uqd2hMCg-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 35vh;
     margin-right: 2%;
-    margin-left:  2%;
+    margin-left:  2%;    
 }
 
 /* project thumbnails */
@@ -145,8 +155,8 @@ a {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2%;
-    
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .image-container{
@@ -156,7 +166,7 @@ a {
 }
     
 .project-image{
-    margin-right: 3%;
+    margin-right: 2%;
     
 }
 
@@ -167,16 +177,14 @@ a {
     justify-content: center;
     align-content: center;
     
-    width: 30%;
+    width: 20%;
     margin-right: 2%;
-    margin-left: 2%;
-    
-    
-    
+    margin-left: 1%;
+    text-align: center;  
 }
 
 .text{
-    width: 30%;
+    width: 50%;
     
     
 
@@ -187,18 +195,17 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 14vh;
+    /* height: 14vh; */
     background-color: lightgray;
-    margin-top: 4%;
-    
-   
+    /* margin-top: 4%; */
+    flex: 0;
 }
 
 
 .contact-button {
     width: 25%;
     padding: 5%;
-    size: 100px;
+    size: 10rem;
     margin-top: 2%
 }
 
@@ -213,4 +220,71 @@ footer {
 .contact-button a:hover{
     background: black;
     color: white;
+}
+
+@media (max-width: 800px) {
+
+    .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 7%;
+        margin-top: ;
+    }
+
+    .project-text{
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .background-image-container{
+        background-image: url("/Users/thecrowsnest/Documents/Lambda/Git/User-Interface-II/assets/stefan-kunze--6-uqd2hMCg-unsplash.jpg");
+        max-width: 100%;
+        min-height: 20%;
+        background-size: cover;
+        margin-right: 2%;
+        margin-left:  2%;    
+    }
+
+    .contact-button{
+        width: 30%
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact-button{
+        width: 40%;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 360px) {  /* this is the dimensions for standard iphone */
+    h1{
+        font-size: 4.5rem;
+    }
+
+    nav{
+        display:flex;
+        flex-direction: column;
+        padding-right: 4%;
+        width: 40%;   
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 1%;
+        margin-top: 4%;
+    }
+
+    .contact-button{
+        width: 50%;
+    }
 }
